@@ -5,9 +5,9 @@ from langchain_pinecone import PineconeVectorStore
 from pinecone import Pinecone, PodSpec
 import os
 
-#os.environ["OPENAI_API_KEY"] = "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"
-#os.environ["PINECONE_API_KEY"] = "5f28696f-e9ab-4969-8787-e61901787bc9"
-#os.environ["PINECONE_ENV"] = "gcp-starter"
+os.environ["OPENAI_API_KEY"] = ""
+os.environ["PINECONE_API_KEY"] = ""
+os.environ["PINECONE_ENV"] = "gcp-starter"
 
 def loadText():
     loader = TextLoader("Conocimiento.txt")
@@ -30,7 +30,7 @@ def loadText():
 
 
     index_name = "langchain-demo"
-    #pc = Pinecone(api_key='5f28696f-e9ab-4969-8787-e61901787bc9')
+    pc = Pinecone(api_key='')
 
     print(pc.list_indexes())
 
