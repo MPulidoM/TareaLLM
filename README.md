@@ -25,12 +25,45 @@ python -version
 
 Ya al tener este lenguaje puedes usar el IDE que sea de tu agrado. Opciones pueden ser [Pycharm](https://www.jetbrains.com/es-es/pycharm/) o [Visual Studio Code](https://code.visualstudio.com/)
 
+## Arquitectura
+
+La arquitectura de este código se basa en la cadena de lenguaje (langchain) que se compone de los siguientes componentes:
+
+- Cargador de documentos: Se encarga de cargar los documentos relevantes para el análisis. En este ejemplo, se utiliza un cargador de texto y un cargador de base de datos web.
+- Separador de texto: Divide los documentos en fragmentos más pequeños para que el modelo de lenguaje pueda procesarlos. En este ejemplo, se utiliza un separador de texto recursivo de caracteres.
+- Modelo de incrustaciones de lenguaje: Convierte el texto en vectores numéricos para que puedan ser indexados y buscados eficientemente. En este ejemplo, se utiliza el modelo de incrustaciones de lenguaje OpenAI.
+- Almacén de vectores: Indexa los vectores para una búsqueda eficiente. En este ejemplo, se utiliza el almacén de vectores Chroma.
+- Modelo de lenguaje: Genera respuestas a las preguntas basadas en los vectores indexados. En este ejemplo, se utiliza el modelo de lenguaje OpenAI.
+  
+La arquitectura del código se organiza en módulos y submódulos, cada uno de los cuales se encarga de una tarea específica. El módulo principal es langchain, que contiene los módulos chains, llms, prompts, community, schema y utils. El módulo chains contiene las cadenas de lenguaje, el módulo llms contiene los modelos de lenguaje, el módulo prompts contiene los prompts, el módulo community contiene las implementaciones de la comunidad, el módulo schema contiene las clases de esquema y el módulo utils contiene las utilidades.
+
+La arquitectura del código está diseñada para ser modular y fácil de usar, lo que permite agregar nuevos cargadores de documentos, separadores de texto, modelos de incrustaciones de lenguaje, almacenes de vectores y modelos de lenguaje según sea necesario. Además, la arquitectura del código está diseñada para ser eficiente y precisa, lo que permite  crear cadenas de lenguaje que puedan procesar y analizar grandes conjuntos de documentos. 
+
+## Instalando
+
+Debemos clonar el repositorio:
+```
+git clone https://github.com/MPulidoM/TareaLLM.git 
+```
+Se accede al directorio del proyecto:
+```
+cd TareaLLM
+```
+Antes de correr las clases debe tener en cuenta lo siguiente:
+
+- La PINECONE_API_KEY de la clase [Pinecote](https://github.com/MPulidoM/TareaLLM/blob/main/pinecote.py) es obtenida de la página []()
+
+
+
+
+
+
 <img width="960" alt="M1" src="https://github.com/MPulidoM/TareaLLM/assets/118181543/9d01ddce-c0e8-4f2f-bc4b-cb4dec8ba486">
 
 <img width="960" alt="M2" src="https://github.com/MPulidoM/TareaLLM/assets/118181543/c569e80e-d04b-4b22-bdca-1e5d3e01f691">
 
 ![image](https://github.com/MPulidoM/TareaLLM/assets/118181543/19015453-1fb1-458a-bfb4-b8d294f6cf4f)
 
-## Arquitectura
+
 
 
