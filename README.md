@@ -111,6 +111,9 @@ La clase LLMChain toma el mensaje, el modelo de lenguaje y el recuperador como a
 
 ![image](https://github.com/MPulidoM/TareaLLM/assets/118181543/3b707910-7796-48b0-afa4-c19a42379771)
 
+![Imagen de WhatsApp 2024-04-16 a las 17 45 40_5386a000](https://github.com/MPulidoM/TareaLLM/assets/118181543/e6f42790-a9ad-419b-9214-1c88032d03be)
+
+
 Es un ejemplo del uso de la clase PineconeVectorStore del módulo **langchain_pinecone** para crear un almacén de vectores que se puede usar para buscar documentos según sus incrustaciones.
 
 - El almacén de vectores se crea a partir de un conjunto de documentos cargados desde un archivo de texto utilizando la clase **TextLoader** del módulo **langchain_community.document_loaders.** Los documentos se dividen en fragmentos más pequeños utilizando la clase RecursiveCharacterTextSplitter del módulo **langchain.text_splitter.**
